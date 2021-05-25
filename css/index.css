@@ -2,6 +2,7 @@
 
 body {
     background-color: rgb(224, 239, 255);
+    font-family: Poppins;
 }
 
 .pg-pips a {
@@ -61,5 +62,33 @@ body {
     height: auto;
     max-width: 10%;
     max-height: 50%;
+}
+
+@media screen and (max-width: 600px), (max-height: 600px) {
+    .pg-page p {
+        font-size: 24px;
+    }
+
+    .pg-page h1 {
+        font-size: 28px;
+    }
+
+    #page-8 p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 300px), (max-height: 300px) {
+    .pg-page p {
+        font-size: 16px;
+    }
+
+    .pg-page h1 {
+        font-size: 18px;
+    }
+
+    #page-8 p {
+        font-size: 8px;
+    }
 }
 

@@ -2,13 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="assets/logo/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="assets/logo/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/logo/apple-touch-logo.png">
     <title>About AA Cell</title>
+    <link rel="stylesheet" href="css/font.css"/>
+
+    <style>
+        body {
+            background-color: rgb(224, 239, 255);
+        }
+        a {
+            display: inline-block;
+            margin: 20px;
+            height: 5vh;
+        }
+        a img {
+            height: 5vh;
+            width: auto;
+        }
+    </style>
+
 </head>
 <body>
 
-<script>
-    window.location.href = 'en_US/'
-</script>
-
 </body>
+
+<script>
+    let langs = ['en_US', 'zh_CN']
+    window.onload = function () {
+        langs.forEach(lang => {
+            let a = document.createElement('a')
+            a.href = lang + '/'
+            let img = document.createElement('img')
+            img.src = `assets/logo-home/${lang}.svg`
+            a.appendChild(img)
+            document.body.appendChild(a)
+        })
+    }
+
+</script>
 </html>
