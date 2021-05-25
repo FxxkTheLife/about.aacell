@@ -1,0 +1,1 @@
+window.location.href = 'en_US/'
