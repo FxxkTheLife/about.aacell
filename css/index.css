@@ -1,0 +1,46 @@
+#page-1 {
+    background-color: #004773;
+}
+
+body, #page-2, #page-3, #page-4 {
+    background-color: #004773;
+}
+
+.pg-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pg-page p {
+    color: #BFDEFF;
+    padding: 0 20%;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+#logo-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 20%;
+}
+
+#head-logo-about {
+    width: auto;
+    height: auto;
+    max-width: 40%;
+    max-height: 50%;
+    margin-right: 10%;
+}
+
+#head-logo {
+    width: auto;
+    height: auto;
+    max-width: 10%;
+    max-height: 50%;
+}
+
