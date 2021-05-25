@@ -10,7 +10,7 @@ new Pageable("#container", {
     freeScroll: false, // allow manual scrolling when dragging instead of automatically moving to next page
     navPrevEl: false, // define an element to use to scroll to the previous page (CSS3 selector string or Element reference)
     navNextEl: false, // define an element to use to scroll to the next page (CSS3 selector string or Element reference)
-    infinite: true, // enable infinite scrolling (from 0.4.0)
+    infinite: false, // enable infinite scrolling (from 0.4.0)
     // slideshow: { // enable slideshow that cycles through your pages automatically (from 0.4.0)
     //     interval: 3000, // time in ms between page change,
     //     delay: 0 // delay in ms after the interval has ended and before changing page

@@ -1,9 +1,11 @@
-#page-1 {
-    background-color: #004773;
+
+
+body {
+    background-color: rgb(224, 239, 255);
 }
 
-body, #page-2, #page-3, #page-4 {
-    background-color: #004773;
+.pg-pips a {
+    background: rgb(0, 122, 255) !important;
 }
 
 .pg-page {
@@ -14,10 +16,27 @@ body, #page-2, #page-3, #page-4 {
 }
 
 .pg-page p {
-    color: #BFDEFF;
-    padding: 0 20%;
-    font-size: 16px;
-    line-height: 30px;
+    color: rgb(0, 122, 255);
+    padding: 0 calc(10% + 20px) 0 10%;
+    font-size: 32px;
+    /*line-height: 30px;*/
+}
+
+.pg-page h1 {
+    color: rgb(0, 122, 255);
+    padding: 0 calc(10% + 20px) 0 10%;
+    font-size: 36px;
+}
+
+#page-8 img {
+    width: auto;
+    height: auto;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+#page-8 p {
+    font-size: 12px;
 }
 
 #logo-div {
