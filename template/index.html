@@ -6,7 +6,7 @@
     <link rel="icon" href="../assets/logo/favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="../assets/logo/favicon.ico" type="image/x-icon"/>
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/logo/apple-touch-logo.png">
-    <title>关于 5 号电池</title>
+    <title>@{title}</title>
 
     <script src="../js/pageable.min.js"></script>
     <link rel="stylesheet" href="../css/font.css"/>
@@ -19,49 +19,49 @@
     <div id="container" class="pg-container">
         <div data-anchor="page-1" id="page-1" class="pg-page pg-active">
             <div id="logo-div">
-                <img id="head-logo-about" src="../assets/logo-home/zh_CN.svg" alt="logo">
+                <img id="head-logo-about" src="../assets/logo-home/@{lang}.svg" alt="logo">
                 <img id="head-logo" src="../assets/logo/logo.svg" alt="logo">
             </div>
         </div>
         <div data-anchor="page-2" id="page-2" class="pg-page">
             <p>
-                基于 Web 的跨平台文件共享应用：<br>拥有小室一间，自在共享文件！
+                @{page-1}
             </p>
         </div>
         <div data-anchor="page-3" id="page-3" class="pg-page">
-            <h1>文件传输只能单文件？</h1>
+            <h1>@{page-2-title}</h1>
             <p>
-                有了小室，轻松暂存多个文件。
+                @{page-2-content}
             </p>
         </div>
         <div data-anchor="page-4" id="page-4" class="pg-page">
-            <h1>文件大小限制？</h1>
+            <h1>@{page-3-title}</h1>
             <p>
-                目前未设限，但请不要短时间喂给服务器太多数据，它可能撑不住。
+                @{page-3-content}
             </p>
         </div>
         <div data-anchor="page-5" id="page-5" class="pg-page">
-            <h1>登录账户太麻烦？</h1>
+            <h1>@{page-4-title}</h1>
             <p>
-                小室 ID 简短易记，还可随机号码作为名称；管理者密码用于管理文件，小室钥匙用于进入房间，密码与钥匙可有也可无。
+                @{page-4-content}
             </p>
         </div>
         <div data-anchor="page-6" id="page-6" class="pg-page">
-            <h1>有时只需传文本？</h1>
+            <h1>@{page-5-title}</h1>
             <p>
-                小室自带聊天功能，可发送文本。
+                @{page-5-content}
             </p>
         </div>
         <div data-anchor="page-7" id="page-7" class="pg-page">
-            <h1>小室使用时间？</h1>
+            <h1>@{page-6-title}</h1>
             <p>
-                小室有一节电池的电量，电量默认可使用是 2 小时，电池电量耗尽时，小室被系统自动摧毁。
+                @{page-6-content}
             </p>
         </div>
         <div data-anchor="page-8" id="page-8" class="pg-page">
             <img src="../assets/about/contact-qq.jpeg" alt="contact-qq"/>
             <p>
-                声明：使用本网站服务，即同意《用户协议书》、拒绝传播任何违反国家规定的资料、遵守基本社会公德和互联网道德规范。<br><br>郑重承诺：本站内容均存储于云服务器，每个小室中的资源只为进入小室的用户所使用，其他人无权查看，一个小室的资源在这个小室销毁时被全部删除。<br><br>小提示：我们致力于为用户提供稳定、高效的、便捷的文件传输空间，目前网站仍继续在开发与完善，若未能及时提供服务敬请谅解！有遇到问题或有更多的建议，可以加入 QQ 群或者直接联系我们，欢迎反馈~
+                @{page-7-content}
             </p>
         </div>
         <!--        <div data-anchor="page-9" id="page-9" class="pg-page">-->
