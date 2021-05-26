@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    margin: 20px 0;
+}
+
+#title {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+#wechat-ali {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#wechat-ali img {
+    width: auto;
+    height: auto;
+    max-width: 30vw;
+    max-height: 50vh;
+}
+
+#paypal {
+    width: auto;
+    height: auto;
+    max-width: 30vw;
+    max-height: 50vh;
+}
+
+#paypal img {
+    width: 100%;
+}
