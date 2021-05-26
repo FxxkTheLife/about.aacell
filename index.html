@@ -12,13 +12,17 @@
     <style>
         body {
             background-color: rgb(224, 239, 255);
+
+            margin: 0;
+        }
+        #content {
+            min-height: 100vh;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
-            min-height: 100vh;
-            margin: 0;
+            align-content: center;
         }
         a {
             display: inline-block;
@@ -34,6 +38,8 @@
 </head>
 <body>
 
+<div id="content"></div>
+
 </body>
 
 <script>
@@ -45,7 +51,7 @@
             let img = document.createElement('img')
             img.src = `assets/logo-home/${lang}.svg`
             a.appendChild(img)
-            document.body.appendChild(a)
+            document.getElementById('content').appendChild(a)
         })
     }
 
