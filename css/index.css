@@ -5,6 +5,21 @@ body {
     font-family: Poppins;
 }
 
+#lang-a {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+#lang-a img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .pg-pips a {
     background: rgb(0, 122, 255) !important;
 }
