@@ -7,9 +7,10 @@ path = 'template/'
 
 def parse_properties(filename):
     res = {}
-    with open(path + filename, 'r') as f:
+    with open(path + filename, 'rb') as f:
+        print(filename)
         s = f.read()
-        s = s.replace('\\\n', '')
+        s = s.decode().replace('\\\n', '')
         lines = s.split('\n')
         for line in lines:
             sharp_idx = line.find('#')
@@ -46,7 +47,7 @@ if __name__ == '__main__':
         print(config)
         os.makedirs(lang, exist_ok=True)
         s = ''
-        with open(lang + '/index.html', 'w') as f:
+        with open(lang + '/index.html', 'w',encoding='utf-8') as f:
             for content, key in items:
                 s += content + config.get(key, '')
             f.write(s)
